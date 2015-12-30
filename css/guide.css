@@ -10,11 +10,11 @@ html{
 	font-size:12px;
 	font-weight:400;
 	font-family: 'Source Sans Pro', sans-serif;
-	-webkit-user-select: none;
+	/*-webkit-user-select: none;
 	-khtml-user-select: none;
 	-moz-user-select: none;
 	-ms-user-select: none;
-	user-select: none;
+	user-select: none;*/
     width: 100%;
     height: 100%;
 }
@@ -561,7 +561,7 @@ p:last-child { margin-bottom: 0; }
 
 .mobile.land
 .quote{
-    width: 35%;
+    width: 45%;
     height: 100%;
     top: 0;
     left: 60px

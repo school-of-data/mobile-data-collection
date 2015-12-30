@@ -135,26 +135,26 @@ window.onload = function (){
 		{
 			hex:'#e8c453',
 			hover:'#f2c549',
-			title: "Project Designer",
-			text: "I am responsible for overall management of the survey. I define the project goal and I’m responsible for all the major decisions that need to be taken during the project. I’m also responsible for communication amongst the team. I report the project status, maintain a record of lessons learned and lead retrospectives."
+			title: "Project Manager",
+			text: "I am responsible for overall management of the survey. I define the project goal and I’m responsible for all the major decisions that need to be taken during the project. I’m also responsible for communication amongst the survey team, to make sure that everybody is on the same page. I report the project status, maintain a record of lessons learned and lead retrospectives."
 		},
 		{
 			hex:'#a3c66b',
 			hover:'#aecc66',
 			title: "Survey Designer",
-			text: "I am responsible for overall management of the survey. I define the project goal and I’m responsible for all the major decisions that need to be taken during the project. I’m also responsible for communication amongst the team. I report the project status, maintain a record of lessons learned and lead retrospectives."
+			text: "My mission is to construct questions that elicit just the right data from the survey’s respondents. I have to make sure questions are not ambiguous and are as straightforward as possible, encompassing complexity and subtleties in a way the respondents fully understand their meaning. My role also has a large visual design element: I ensure the survey looks appealing and is engaging to complete."
 		},
 		{
 			hex:'#f26649',
 			hover:'#ff6f5c',
 			title: "Trainer",
-			text: "I am responsible for overall management of the survey. I define the project goal and I’m responsible for all the major decisions that need to be taken during the project. I’m also responsible for communication amongst the team. I report the project status, maintain a record of lessons learned and lead retrospectives."
+			text: "I run the training sessions that will help interviewers, or enumerators, learn the skills they need to perform a successful data collection with participants. Even if the survey is well designed the quality of the data collected through the interviews depends ultimately on the data collection skills of the enumerators. I make sure they get acquainted with the mobile devices and the mobile app used to conduct the survey."
 		},
 		{
 			hex:'#5ebcc2',
 			hover:'#63c4c6',
 			title: "Data Analyst",
-			text: "I am responsible for overall management of the survey. I define the project goal and I’m responsible for all the major decisions that need to be taken during the project. I’m also responsible for communication amongst the team. I report the project status, maintain a record of lessons learned and lead retrospectives."
+			text: "I work with the Survey Designer to ensure the questionnaire used in the interviews will generate relevant data for the analysis phase. I also create variable mappings and define the format in which output is generated. It is my responsibility to track the progress of data collection and communicating it with the rest of the team."
 		}
 	];
 
