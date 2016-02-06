@@ -142,47 +142,61 @@ window.onload = function (){
 			hex:'#a3c66b',
 			hover:'#aecc66',
 			title: "Survey Designer",
-			text: "My mission is to construct questions that elicit just the right data from the survey’s respondents. I have to make sure questions are not ambiguous and are as straightforward as possible, encompassing complexity and subtleties in a way the respondents fully understand their meaning. My role also has a large visual design element: I ensure the survey looks appealing and is engaging to complete."
+			text: "My mission is to construct questions that elicit just the right data from the survey’s respondents. I have to make sure questions are not ambiguous and are as straightforward as possible, encompassing complexity and subtleties in a way the respondents fully understand. My role also has a large visual design element: I ensure the survey looks appealing and is engaging to complete."
 		},
 		{
 			hex:'#f26649',
 			hover:'#ff6f5c',
 			title: "Trainer",
-			text: "I run the training sessions that will help interviewers, or enumerators, learn the skills they need to perform a successful data collection with participants. Even if the survey is well designed the quality of the data collected through the interviews depends ultimately on the data collection skills of the enumerators. I make sure they get acquainted with the mobile devices and the mobile app used to conduct the survey."
+			text: "I run the training sessions that will help interviewers, or enumerators, learn the skills they need to perform a successful data collection with participants. Even if the survey is well designed, the quality of the data collected through the interviews depends ultimately on the data collection skills of the enumerators. I make sure they get acquainted with the mobile devices and the mobile app used to conduct the survey."
 		},
 		{
 			hex:'#5ebcc2',
 			hover:'#63c4c6',
-			title: "Data Analyst",
-			text: "I work with the Survey Designer to ensure the questionnaire used in the interviews will generate relevant data for the analysis phase. I also create variable mappings and define the format in which output is generated. It is my responsibility to track the progress of data collection and communicating it with the rest of the team."
+			title: "Data Manager",
+			text: "I work with the Survey Designer to ensure the questionnaire used in the interviews will generate relevant data for the analysis phase. I also create variable mappings and define the format in which output is generated. It is my responsibility to track the progress of data collection and to communicate it to the rest of the team."
 		}
 	];
 
 	var courses =  [ null,
 		{
+			module:1,
 			title: "Introduction to mobile data collection and ODK",
 			text: "An introduction to the challenges of mobile data collection and the tool that will be featured for this course: Open Data Kit",
 			url: "http://schoolofdata.org/2015/11/13/course-outline-mobile-data-collection/"
 		},
 		{
+			module:1,
 			title: "Creating your ODK Data Collection Form",
 			text: "This module will introduce you to the initial setup of your spreadsheet for use with Open Data Kit",
 			url: "http://schoolofdata.org/creating-your-odk-data-collection-form-excel/"
 		},
 		{
+			module:1,
 			title: "Uploading and Testing your forms using Kobo Toolbox",
 			text: "This module will help you navigate the interface of Kobo Toolbox, a variation of Open Data Kit, to prepare forms before starting your survey",
 			url: "http://schoolofdata.org/uploading-and-testing-your-forms-using-kobo-toolbox/"
 		},
 		{
+			module:1,
 			title: "Setting up your Kobo Toolbox form on your Android device",
 			text: "Kobo Toolbox provides a good platform to collect data using two devices: your laptop and your mobile devices e.g. smartphones and tablets. On this module, we will talk about how to use your Kobo Collect forms on your devices",
 			url: "http://schoolofdata.org/28684-2/"
 		},
 		{
+			module:1,
 			title: "Managing your Kobo Toolbox database",
 			text: "With this last module about Kobo Toolbox and mobile data collection, we will talk about how to manage your Kobo Toolbox database using the online platform",
 			url: "http://schoolofdata.org/managing-your-kobo-toolbox-database/"
+		},
+		{
+			module:2,
+			title: "Learning to use Kobo Toolbox",
+			text: "Kobo Toolbox is a suite of tools for field data collection, usable from your smartphone or in the Web. Learn the basics of this tool in this presentation by Sheena Carmel Opulencia.",
+			url:[
+				["the video","https://www.youtube.com/watch?v=qD3oCRRtLXA" ],
+				["the skillshare", "http://fr.slideshare.net/SchoolofData/skillshare-using-kobo-toolbox-for-mobile-data-collection" ]
+			],
 		}
 
 	];
@@ -296,7 +310,7 @@ window.onload = function (){
 
 	/* download BT */
 
-	if( page == 'resourses' || page == 'guide' ){
+	if( page == 'sneakpeak' || page == 'guide' ){
 
 		reg('download_bt');
 
@@ -309,7 +323,6 @@ window.onload = function (){
 
 	/* COURSES */
 
-
 	if(page == 'resourses'){
 
 		for( i = 1; i<courses.length; i++ ){
@@ -320,10 +333,31 @@ window.onload = function (){
 			li.d = d;
 			$(li)
 				.addClass('course')
-				.css( {backgroundImage:'url(img/popup.png)'})
-				.on('click', function(){
-					window.open( this.d.url);
+				.addClass('module' + d.module);
+
+			if(d.module == 2){
+
+				div = document.createElement('div');
+				$(div)
+					.addClass('module2_bts')
+				li.appendChild(div);
+
+				for (a in d.url){
+					itm1 = document.createElement('div');
+					itm1.url = d.url[a][1];
+					$(itm1)
+						.addClass('module2_bt')
+						.html(d.url[a][0])
+						.on('click', function(){
+								window.open( this.url);
+						});
+					div.appendChild(itm1)
+				}
+			}else{
+				$(li).on('click', function(){
+						window.open( this.d.url);
 				});
+			}
 
 			div = document.createElement('div');
 			$(div)

@@ -237,6 +237,7 @@ p:last-child { margin-bottom: 0; }
     top: 0;
     bottom:0;
     margin: auto;
+    cursor: pointer;
 }
 
 .mobile
@@ -254,7 +255,6 @@ p:last-child { margin-bottom: 0; }
 #download_bt:hover{
     background-color: #b190cb;
 }
-
 
 #courses_container{
     color: #555;
@@ -295,6 +295,56 @@ p:last-child { margin-bottom: 0; }
     margin: 20px auto;
 }
 
+.module2_bts{
+  position: absolute;
+  left: 105px;
+  bottom:20px;
+  width: 70%;
+}
+
+.mobile.land
+.module2_bts{
+  left: 20%;
+}
+
+.mobile.port
+.module2_bts{
+  left: 15%;
+  width: 70%;
+  bottom: 120px;
+}
+
+.module2_bt{
+  display: inline-block;
+  width: 49%;
+  padding: 15px;
+  border: #fff 1px solid;
+  margin-right: 2px;
+  background-image: url("../img/popup.png");
+  background-position: right;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.mobile.land
+.module2_bt{
+  background-size: 50px;
+  font-size: 14px;
+  padding: 10px;
+}
+
+.mobile.port
+.module2_bt{
+  background-size: 50px;
+  font-size: 14px;
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.module2_bt:hover{
+  background-color: #b190cb;
+}
 
 #courses_title span{
     position: relative;
@@ -313,30 +363,55 @@ p:last-child { margin-bottom: 0; }
     height: 120px;
     margin-bottom: 2px;
     background-color: #a48ab9;
-    cursor: pointer;
     color: #fff;
     position: relative;
     text-align: left;
-    background-image: url("../img/popup.png");
-    background-position: right;
-    background-repeat: no-repeat;
     border-radius: 5px;
 }
 
+.course.module1{
+  background-image: url("../img/popup.png");
+  background-position: right;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.course.module1:hover{
+    background-color: #b190cb;
+}
+
+.course.module2{
+  height: 220px;
+  background-repeat: no-repeat;
+}
+
 .mobile.port
-.course{
+.course.module1{
     height: 400px;
     background-position: top 0 right 0;
     padding-top: 50px;
     background-size: 50px;
 }
 
+.mobile.port
+.course.module2{
+    height: 470px;
+    background-position: top 0 right 0;
+    padding-top: 50px;
+    background-size: 50px;
+}
+
 .mobile.land
-.course{
+.course.module1{
     background-size: 50px;
     height:150px
 }
 
+.mobile.land
+.course.module2{
+    background-size: 50px;
+    height:210px
+}
 
 .course img{
     width: 70px;
@@ -363,9 +438,6 @@ p:last-child { margin-bottom: 0; }
     margin: 0 auto;
 }
 
-.course:hover{
-    background-color: #b190cb;
-}
 
 .course_title{
     font-size: 20px;
