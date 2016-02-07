@@ -383,6 +383,7 @@ p:last-child { margin-bottom: 0; }
 .course.module2{
   height: 220px;
   background-repeat: no-repeat;
+  margin-top: 50px;
 }
 
 .mobile.port

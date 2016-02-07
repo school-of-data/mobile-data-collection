@@ -191,11 +191,11 @@ window.onload = function (){
 		},
 		{
 			module:2,
-			title: "Learning to use Kobo Toolbox",
+			title: "Skillshare: The basics of Kobo Toolbox",
 			text: "Kobo Toolbox is a suite of tools for field data collection, usable from your smartphone or in the Web. Learn the basics of this tool in this presentation by Sheena Carmel Opulencia.",
 			url:[
 				["the video","https://www.youtube.com/watch?v=qD3oCRRtLXA" ],
-				["the skillshare", "http://fr.slideshare.net/SchoolofData/skillshare-using-kobo-toolbox-for-mobile-data-collection" ]
+				["the slide deck", "http://fr.slideshare.net/SchoolofData/skillshare-using-kobo-toolbox-for-mobile-data-collection" ]
 			],
 		}
 
