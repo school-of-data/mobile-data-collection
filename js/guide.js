@@ -120,7 +120,7 @@ window.onload = function (){
 	})
 
 	$(menu2).on('click', function(){
-		document.location.href = "sneakpeak.html";
+		document.location.href = "sneakpeek.html";
 	})
 
 	$(menu3).on('click', function(){
@@ -207,7 +207,7 @@ window.onload = function (){
 	var role_left;
 	var role_right;
 
-	if(page == 'sneakpeak'){
+	if(page == 'sneakpeek'){
 
 		for( i = 1; i<roles.length; i++ ){
 
@@ -310,7 +310,7 @@ window.onload = function (){
 
 	/* download BT */
 
-	if( page == 'sneakpeak' || page == 'guide' ){
+	if( page == 'sneakpeek' || page == 'guide' ){
 
 		reg('download_bt');
 
