@@ -43,6 +43,19 @@ Once you have your answer, you need to define HOW you will collect the data. It 
 * using one or several existing database(s),
 * using forms, questionnaires and interviews,
 * using direct observations. 
+* by surveying subjects once or multiple moments across times.
+
+
+Cross-sectional vs. Longitudinal data collection
+One crucial distinction between different field research projects is the time frame. Will the data only be captured from subjects once, in other words, cross-sectional? Or does the intervention require subjects to be measured at multiple moments across time, in other words, longitudinal? 
+
+Cross-sectional
+Research that involves recording data at a single one point in time, a so-called, snapshot of a population is a cross-sectional study. Often, these studies do not collect personally identifiable information (PII) as there is no need for a follow-up on the study subjects. Examples of cross-sectional studies are patient registries or household surveys.
+
+Longitudinal
+Some projects will requiere the same subjects to be surveyed at different moments of time, in other words longitudinally. To be able to efficiently follow-up on subjects, longitudinal projects require personally identifiable information to be collected and a mobile data collection solution that supports case management. Examples of longitudinal projects are educational interventions or clinical trials.
+
+Case management is the ability to create entities and follow-up on them across time. A case can be anything — patient, beneficiary, location, program or facility. Case management saves time and improves data quality in longitudinal research because it eliminates the need to re-enter baseline data each time the same subject is assessed.
 
 
 Direct observations is making direct measurements of the subject being studied (like the number of buildings in need of repair after an earthquake), rather than using indirect measurements, such as databases or testimonies from people knowledgeable in the field. Most often, direct observations are made by human observers, sometimes with the aid of specific equipment: 
